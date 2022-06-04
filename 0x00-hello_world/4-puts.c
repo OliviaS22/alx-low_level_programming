@@ -2,11 +2,11 @@
 
 /**
  *
- * * main-Entry point
+ * main - Entry point
  *
- * * Return: 0 if successful
+ * Return: Always 0 (Success)
  *
- * */
+ */
 
 int main(void)
 
