@@ -9,23 +9,14 @@
  */
 
 char *argstostr(int ac, char **av)
-
 {
-
 	char *aout;
-
 	int c, i, j, ia;
 
-
-
 	if (ac == 0)
-
 	{
-
 		return (NULL);
-
 	}
-
 	for (c = i = 0; i < ac; i++)
 	{
 
@@ -42,25 +33,20 @@ char *argstostr(int ac, char **av)
 	{
 		free(aout);
 	return (NULL);
-
 	}
 
 	for (i = j = ia = 0; ia < c; j++, ia++)
 	{
 		if (av[i][j] == '\0')
 		{
-
 			aout[ia] = '\n';
 			i++;
 			ia++;
-
 			j = 0;
 		}
 		if (ia < c - 1)
-
 			aout[ia] = av[i][j];
 	}
 	aout[ia] = '\0';
-
 	return (aout);
 }
