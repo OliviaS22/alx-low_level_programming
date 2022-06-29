@@ -9,28 +9,19 @@
  * Return: If the number of arguments is not exactly one - 1.
  * Otherwise - 0.
  */
-
 int main(int argc, char *argv[])
-
 {
-
 	int cents, coins = 0;
 
-
-
 	if (argc != 2)
-
 	{
-
 		printf("Error\n");
 
 		return (1);
 	}
 	cents = atoi(argv[1]);
-
 	while (cents > 0)
 	{
-
 		coins++;
 		if ((cents - 25) >= 0)
 		{
@@ -54,7 +45,6 @@ int main(int argc, char *argv[])
 		}
 		cents--;
 	}
-
 	printf("%d\n", coins);
 	return (0);
 }
